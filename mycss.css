@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    padding: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-flow: column;
+    background-image: linear-gradient(120deg, #fff001, #f6f6f6);
+}
+
+i, input {
+    border: none;
+    font-size: 40px;
+}
+
+body div#todo-div {
+    list-style: none;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    font-size: 30px;
+}
+
+body div#todo-div div {
+    margin: 30px;
+}
+
+#todoList div {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    font-size: 30px;
+}
+
+#todoList div button {
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+#todoList div li {
+    flex-grow: 1;
+}
+
+#todoList div button.checked {
+    background-color: #5bc21f;
+}
+
+#todoList div button.delete {
+    background-color: #d61212;
+}
+
+#todoListComplete div {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    font-size: 30px;
+}
+
+#todoListComplete div button {
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+#todoListComplete div li {
+    flex-grow: 1;
+}
+
+#todoListComplete div button.checked {
+    background-color: #5bc21f;
+}
+
+#todoListComplete div button.delete {
+    background-color: #d61212;
+}
