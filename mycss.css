@@ -34,6 +34,11 @@ body div#todo-div div {
     margin: 30px;
 }
 
+#todoList{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+}
 #todoList div {
     list-style: none;
     display: flex;
@@ -43,8 +48,8 @@ body div#todo-div div {
 }
 
 #todoList div button {
-    padding: 5px;
-    margin: 5px;
+    padding: 2px;
+    margin: 2px;
     border: none;
     border-radius: 3px;
     color: white;

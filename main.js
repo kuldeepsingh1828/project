@@ -32,6 +32,10 @@ function renderTodo() {
         arrayTodo.forEach(function (e) {
             addTodo(e);
         });
+        arrayDeletedTodo.forEach(function (e) {
+            deletedTask.push(e);
+        });
+        updateTask();
         count = arrayDeletedTodo.length;
         deleteCount.innerHTML = count;
     }
@@ -66,6 +70,7 @@ function addTodo(event) {
     checked.classList.add('checked');
     trash.innerHTML = '<i class="fas fa-trash"></i>';
     trash.classList.add('delete');
+    div.classList.add('col-lg-6');
     div.setAttributeNode(divAttr);
     div.setAttributeNode(divid);
 
@@ -92,6 +97,7 @@ function deleteTodo(event) {
             return false;
         } return true;
     });
+    console.log(todoTask);
     updateTask();
 }
 function checkTodo(event) {
@@ -122,6 +128,7 @@ function drop(ev) {
     });
     deleteCount.innerHTML = deletedTask.length;
     todoList.removeChild(document.getElementById(data));
+    console.log(todoTask);
     updateTask();
 }
 function updateTask() {
